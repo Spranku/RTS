@@ -29,6 +29,9 @@ protected:
 	int32 WoodCost = 5;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
+	int32 WoodCarrying = 0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
 	int32 StoneCost = 5;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
