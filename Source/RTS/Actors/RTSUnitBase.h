@@ -19,6 +19,24 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
+	FText UnitName = FText::FromString("DefaultName");
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
+	FText UnitDescription = FText::FromString("Default Description");
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
+	int32 WoodCost = 5;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
+	int32 StoneCost = 5;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
+	int32 FoodCost = 5;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
+	UTexture2D* Thumbnail = nullptr;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
