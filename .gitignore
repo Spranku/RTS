@@ -13,12 +13,5 @@ Saved
 *.xcodeproj
 *.xcworkspace
 
-Content/AnimStarterPack
-Content/FPS_Weapon_Bundle
-Content/MilitaryWeapSilver
-Content/MS_Blood
-Content/CyberpunkIndustries
-Content/Blueprints/GameMaps/Demo_Map_BuiltData.uasset
-Content/Sci_Fi_Character_08
-Content/SWAT
-Content/CustomizableArmsAnims
+Content/ParagonGrux
+Content/HandPaintedEnvironment
