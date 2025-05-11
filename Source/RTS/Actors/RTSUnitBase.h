@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "/Projects/RTS/Source/RTS/FuncLibrary/RTSTypes.h"
 #include "RTSUnitBase.generated.h"
 
 UCLASS()
@@ -29,10 +30,28 @@ protected:
 	int32 WoodCost = 5;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
+	int32 ResourceCarrying = 0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
+	EResource ResourceHeld;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
 	int32 StoneCost = 5;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
+	int32 StoneCarrying = 0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
 	int32 FoodCost = 5;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
+	int32 FoodCarrying = 0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
+	int32 GoldCost = 5;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
+	int32 GoldCarrying = 0;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Base Params")
 	UTexture2D* Thumbnail = nullptr;
